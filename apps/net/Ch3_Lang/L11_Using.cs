@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using Newtonsoft.Json;
 
 namespace Ch3_Lang
@@ -19,6 +17,8 @@ namespace Ch3_Lang
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(file, data);
             }
+
+            System.Console.WriteLine($"Created file.json in working directory.");
         }
     }
 }
