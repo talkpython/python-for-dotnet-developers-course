@@ -6,8 +6,8 @@ namespace Ch3_Lang
     {
         public static void Run()
         {
-            var counter1 = CreateCounter(7);
-            var counter2 = CreateCounter(-100);
+            var counter1 = CreateCounter(7, 1);
+            var counter2 = CreateCounter(-100, 2);
             counter1();
             counter2();
 
@@ -20,7 +20,7 @@ namespace Ch3_Lang
 
         public delegate void CounterMethod();
 
-        public static CounterMethod CreateCounter(int starterVal)
+        public static CounterMethod CreateCounter(int starterVal, int counter_id)
         {
             var start = starterVal;
             Console.WriteLine($"Creating a counter with start value {starterVal}...");
@@ -28,7 +28,7 @@ namespace Ch3_Lang
             CounterMethod counter = delegate ()
             {
                 start++;
-                Console.WriteLine($"Counting {starterVal}\t-->\t{start}.");
+                Console.WriteLine($"#{counter_id}: Counting {starterVal}\t-->\t{start}.");
             };
 
             return counter;

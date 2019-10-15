@@ -6,10 +6,10 @@
         {
             //Switch.Run();
             //Using.Run();
-            //Errors.Run();
-            // Typing.Run();
+            Errors.Run();
+            //Typing.Run();
             //Closuers.Run();
-            Lambdas.Run();
+            //Lambdas.Run();
             //Ternary.Run();
             //Generators.Run();
             //FunctionArgs.Run();
