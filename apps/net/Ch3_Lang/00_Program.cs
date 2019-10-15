@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             //Switch.Run();
-            //Using.Run();
-            Errors.Run();
+            Using.Run();
+            //Errors.Run();
             //Typing.Run();
             //Closuers.Run();
             //Lambdas.Run();
