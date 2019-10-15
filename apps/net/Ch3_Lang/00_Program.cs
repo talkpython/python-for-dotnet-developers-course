@@ -9,8 +9,8 @@
             //Errors.Run();
             // Typing.Run();
             //Closuers.Run();
-            //Lambdas.Run();
-            Ternary.Run();
+            Lambdas.Run();
+            //Ternary.Run();
             //Generators.Run();
             //FunctionArgs.Run();
             //FunctionBasics.Run();
