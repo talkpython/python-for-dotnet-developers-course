@@ -6,12 +6,16 @@ namespace Ch3_Lang
     {
         public static void Run()
         {
-            // WHILE
-            string name = "EMPTY";
-            while (name?.Length > 0)
+            Console.WriteLine("C# Iteration Demo");
+            // while
+            while (true)
             {
                 Console.Write("What is your name? ");
-                name = Console.ReadLine();
+                string name = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(name))
+                {
+                    break;
+                }
                 Console.WriteLine($"Nice to meet you {name}!");
             }
 
