@@ -6,6 +6,7 @@ namespace Ch3_Lang
     {
         public string Name { get; set; }
         public int Level { get; set; }
+
         public static Wizard Train(int baseLevel)
         {
             Wizard w = new Wizard();
@@ -19,7 +20,7 @@ namespace Ch3_Lang
     {
         public static void Run()
         {
-            var gandolf = Wizard.Train(7);
+            Wizard gandolf = Wizard.Train(7);
             gandolf.Level++;
 
             Console.WriteLine($"The level of the wizard is {gandolf.Level}");
