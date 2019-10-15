@@ -1,0 +1,27 @@
+﻿@using Ch6_Web.Data
+@model GuitarsViewModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="top"></div>
+
+<div class="text-content guitars">
+    <h1>Our custom guitars</h1>
+    
+    <div class="filters">
+        <a class="btn btn-dark" href="/home/guitars/all">All guitars</a>
+        <a class="btn btn-dark" href="/home/guitars/electric">Electric guitars</a>
+        <a class="btn btn-dark" href="/home/guitars/acoustic">Acoustic guitars</a>
+    </div>
+
+    @foreach (Guitar g in Model.Guitars)
+    {
+        <div class="guitar">
+            <img src="@g.Img" alt=""><br>
+            <span class="guitar-name">@g.Name</span>
+            <span class="price">@g.Price</span>
+        </div>
+    }
+</div>
+

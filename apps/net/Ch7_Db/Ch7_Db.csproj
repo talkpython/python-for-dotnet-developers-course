@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.min.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.min.map" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.map" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+  </ItemGroup>
+</Project>
