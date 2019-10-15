@@ -3,15 +3,12 @@
   <MonoDevelop.Ide.ItemProperties.Ch3__Lang PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Ch7__Db PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="Ch3_Lang/L06_Ternary.cs" Line="19" Column="43" />
-    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="net" expanded="True">
             <Node name="Ch3_Lang" expanded="True">
-              <Node name="L06_Ternary.cs" selected="True" />
+              <Node name="L10_Errors.cs" selected="True" />
             </Node>
           </Node>
         </State>

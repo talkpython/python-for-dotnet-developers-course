@@ -102,3 +102,25 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# VS Build files
+bin/debug/
+obj/
+bin/Debug/
+*/bin/Debug/*
+*/bin/debug/*
+**/bin/debug/*
+bin/Release/
+*/bin/Release/*
+.vs/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
