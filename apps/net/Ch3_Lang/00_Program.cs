@@ -13,8 +13,8 @@
             //Lambdas.Run();
             //Generators.Run();
             //FunctionArgs.Run();
-            //FunctionBasics.Run();
-            Iteration.Run();
+            FunctionBasics.Run();
+            //Iteration.Run();
             //ShapeOfCode.Run();
         }
     }
