@@ -11,8 +11,8 @@
             // Typing.Run();
             //Closuers.Run();
             //Lambdas.Run();
-            //Generators.Run();
-            FunctionArgs.Run();
+            Generators.Run();
+            //FunctionArgs.Run();
             //FunctionBasics.Run();
             //Iteration.Run();
             //ShapeOfCode.Run();
