@@ -12,8 +12,8 @@
             //Closuers.Run();
             //Lambdas.Run();
             //Generators.Run();
-            //FunctionArgs.Run();
-            FunctionBasics.Run();
+            FunctionArgs.Run();
+            //FunctionBasics.Run();
             //Iteration.Run();
             //ShapeOfCode.Run();
         }
