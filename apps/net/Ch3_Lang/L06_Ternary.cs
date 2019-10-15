@@ -17,7 +17,9 @@ namespace Ch3_Lang
                 }
 
                 var num = int.Parse(text);
+
                 var numClass = num < 100 ? "small" : "huge!";
+
                 Console.WriteLine($"The number is {numClass}");
             }
         }
