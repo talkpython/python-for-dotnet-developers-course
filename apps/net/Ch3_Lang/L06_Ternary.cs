@@ -8,7 +8,7 @@ namespace Ch3_Lang
         {
             while (true)
             {
-                Console.Write("Enter a number 1 -> 4, (blank to exit): ");
+                Console.Write("Enter a number 1 -> 1,000, (blank to exit): ");
                 var text = Console.ReadLine();
                 if (text == null || text.Trim().Length == 0)
                 {

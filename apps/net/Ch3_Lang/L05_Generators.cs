@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Ch3_Lang
 {
@@ -38,7 +37,7 @@ namespace Ch3_Lang
             }
             // ReSharper disable once IteratorNeverReturns
         }
-
+       
         public static IEnumerable<int> Fibonacci(int count)
         {
             List<int> nums = new List<int>();

@@ -4,14 +4,14 @@
     {
         static void Main(string[] args)
         {
-            //Ternary.Run();
             //Switch.Run();
             //Using.Run();
             //Errors.Run();
             // Typing.Run();
             //Closuers.Run();
             //Lambdas.Run();
-            Generators.Run();
+            Ternary.Run();
+            //Generators.Run();
             //FunctionArgs.Run();
             //FunctionBasics.Run();
             //Iteration.Run();
