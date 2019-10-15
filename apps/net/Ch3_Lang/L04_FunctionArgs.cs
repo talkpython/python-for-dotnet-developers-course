@@ -20,7 +20,7 @@ namespace Ch3_Lang
             Console.WriteLine();
 
             Console.WriteLine("SayHello(name, times, 1, 2, 3)");
-            SayHello("Zoe", 5, 1, 2, 3);
+            SayHello("Zoe", 5, 1, 2, 3, 4);
             Console.WriteLine();
 
             Console.WriteLine("SayHello(int)");
