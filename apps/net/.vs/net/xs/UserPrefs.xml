@@ -2,16 +2,16 @@
   <MonoDevelop.Ide.ItemProperties.Ch4__OOP PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Ch3__Lang PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Ch7__Db PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ch3_Lang/L09_Typing.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ch3_Lang/L10_Errors.cs">
     <Files>
-      <File FileName="Ch3_Lang/L09_Typing.cs" Line="8" Column="23" />
+      <File FileName="Ch3_Lang/L10_Errors.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="net" expanded="True">
             <Node name="Ch3_Lang" expanded="True">
-              <Node name="L09_Typing.cs" selected="True" />
+              <Node name="L10_Errors.cs" selected="True" />
             </Node>
           </Node>
         </State>
