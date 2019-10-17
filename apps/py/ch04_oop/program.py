@@ -20,7 +20,9 @@ def park_cars(cars: List[Car]):
     for c in cars:
         lot.park(c)
 
-    # pprint(lot.spots)
+    for spot, car in lot:
+        if car:
+            print(f"Spot: {spot} has car {car}.")
 
 
 def use_cars(cars):

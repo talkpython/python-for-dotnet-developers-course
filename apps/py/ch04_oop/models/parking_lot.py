@@ -31,8 +31,9 @@ class ParkingLot:
                 self.spots[k] = car
                 break
 
-
-
+    def __iter__(self):
+        for i in self.spots.items():
+            yield i
 
 
 
