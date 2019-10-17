@@ -3,6 +3,11 @@ namespace Ch4_OOP.Models
 {
     public abstract class Car
     {
+        public string ModelName { get; }
+        public string EngineType { get; }
+        public int Cylinders { get; }
+        public float BasePrice { get; }
+
         public Car(string modelName, string engineType, int cylinders, float basePrice)
         {
             ModelName = modelName;
@@ -11,10 +16,6 @@ namespace Ch4_OOP.Models
             BasePrice = basePrice;
         }
 
-        public string ModelName { get; }
-        public string EngineType { get; }
-        public int Cylinders { get; }
-        public float BasePrice { get; }
         public bool IsElectric
         {
             get

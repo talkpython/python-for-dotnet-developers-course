@@ -7,7 +7,7 @@ namespace Ch4_OOP
     {
         static void Main()
         {
-            Console.WriteLine("Hello Cars!");
+            Console.WriteLine("Hello C# Cars!");
 
             Car[] cars = CreateCars();
             foreach (var car in cars)
