@@ -20,7 +20,7 @@ class ParkingLot:
         names = []
         level_names = ['A', 'B', 'C', 'D', 'E', 'G']
         for ln in level_names[:levels]:
-            for n in range(1, spots_per_level+1):
+            for n in range(1, spots_per_level + 1):
                 names.append(f'{ln}{n}')
 
         return ParkingLot(names)
@@ -34,13 +34,3 @@ class ParkingLot:
     def __iter__(self):
         for i in self.spots.items():
             yield i
-
-
-
-
-
-
-
-
-
-
