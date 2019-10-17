@@ -1,1 +1,4 @@
+# comments
 colorama
+bs4
+httpx
