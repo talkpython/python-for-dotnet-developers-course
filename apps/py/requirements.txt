@@ -3,3 +3,4 @@ colorama
 bs4
 httpx
 flask
+sqlalchemy

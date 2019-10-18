@@ -1,7 +1,12 @@
-class Guitar:
+import sqlalchemy as sa
+from guitary.data.sqlalchemybase import SqlAlchemyBase
 
-    def __init__(self, name: str, price: float, img: str, style: str):
-        self.style = style
-        self.img = img
-        self.price = price
-        self.name = name
+
+class Guitar(SqlAlchemyBase):
+    __tablename__ = 'guitars'
+
+    id: int = sa.Column(sa.Integer, primary_key=True, autoincrement=True)
+    name: str = sa.Column(sa.String)
+    style: str = sa.Column(sa.String, index=True)
+    img: str = sa.Column(sa.String)
+    price: float = sa.Column(sa.Float, index=True)
