@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 class ContextSession:
     def __init__(self, session: Session):
-        self.session = session
+        self.session: Session = session
 
     def __enter__(self):
         return self

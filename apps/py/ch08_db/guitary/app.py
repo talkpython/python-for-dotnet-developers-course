@@ -1,6 +1,7 @@
 import flask
 from guitary.services import catalog_service
 from guitary.data import session_factory
+from guitary.data import data_loader
 
 app = flask.Flask(__name__)
 
@@ -20,6 +21,7 @@ def guitars(style: str = None):
 def main():
     session_factory.global_init('guitary.sqlite')
     session_factory.create_tables()
+    data_loader.load_guitars_if_empty()
 
     app.run(debug=True)
 
