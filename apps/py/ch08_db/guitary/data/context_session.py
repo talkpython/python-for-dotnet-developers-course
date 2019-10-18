@@ -16,3 +16,4 @@ class ContextSession:
                 pass
 
         self.session.close()
+        self.session = None
