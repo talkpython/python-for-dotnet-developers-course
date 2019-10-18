@@ -8,6 +8,12 @@ def index():
     return flask.render_template('index.html')
 
 
+@app.route('/guitars')
+def guitars():
+    guitar_list = []
+    return flask.render_template('guitars.html', guitars=guitar_list)
+
+
 def main():
     app.run(debug=True)
 

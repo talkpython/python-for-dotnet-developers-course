@@ -1,0 +1,20 @@
+{% extends "_layout.html" %}
+{% block title %}Guitary{% endblock %}
+
+{% block main_content %}
+
+    <h1>Guitars</h1>
+
+    {# buttons#}
+
+    {% for g in guitars %}
+        <div>{{ g }}</div>
+    {% endfor %}
+
+
+{% endblock %}
+
+{% block additional_css %}
+    <!-- this would be css from about.html -->
+{% endblock %}
+
