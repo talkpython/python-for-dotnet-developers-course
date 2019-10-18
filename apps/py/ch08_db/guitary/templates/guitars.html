@@ -1,0 +1,35 @@
+{% extends "_layout.html" %}
+{% block title %}Guitary{% endblock %}
+
+{% block main_content %}
+
+    <div class="top"></div>
+
+
+    <div class="text-content guitars">
+
+        <h1>Guitars</h1>
+
+        <div class="filters">
+            <a href="/guitars/all" class="btn btn-dark">All guitars</a>
+            <a href="/guitars/electric" class="btn btn-dark">Electric guitars</a>
+            <a href="/guitars/acoustic" class="btn btn-dark">Acoustic guitars</a>
+        </div>
+
+        {% for g in guitars %}
+            <div class="guitar">
+                <img src="{{ g.img }}" alt=""><br>
+                <span class="guitar-name">{{ g.name }}</span>
+                <span class="price">${{ '{:,.0f}'.format(g.price) }}</span>
+            </div>
+        {% endfor %}
+
+    </div>
+
+
+{% endblock %}
+
+{% block additional_css %}
+    <!-- this would be css from about.html -->
+{% endblock %}
+

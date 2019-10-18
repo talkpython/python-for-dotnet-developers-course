@@ -1,0 +1,66 @@
+.navbar-brand img {
+    height: 48px;
+}
+
+.masthead .container {
+    max-width: 800px;
+}
+
+.masthead img {
+    height: 256px;
+    float:left;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+    font-size: 24px;
+}
+
+.top {
+    height: 90px;
+    background-color: purple;
+}
+
+footer {
+    background-color: transparent;
+}
+body {
+    background-color: rebeccapurple;
+}
+.main_content {
+    background-color: white;
+    min-height: 500px;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.guitars {
+    text-align: center;
+}
+
+.guitar {
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+.guitar img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+.guitar-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price {
+    color: #3a3a3a;
+}
