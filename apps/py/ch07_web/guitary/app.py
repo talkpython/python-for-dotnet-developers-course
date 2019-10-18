@@ -5,7 +5,7 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello world!"
+    return flask.render_template('index.html', name="Michael", nums=[1, 1, 2, 3, 5, 8])
 
 
 def main():
