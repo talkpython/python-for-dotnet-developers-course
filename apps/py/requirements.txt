@@ -4,3 +4,4 @@ bs4
 httpx
 flask
 sqlalchemy
+requests
