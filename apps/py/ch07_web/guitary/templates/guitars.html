@@ -2,13 +2,17 @@
 {% block title %}Guitary{% endblock %}
 
 {% block main_content %}
-
+    <br><br><br><br><br>
     <h1>Guitars</h1>
 
-    {# buttons#}
+    <div class="filters">
+        <a href="/guitars/all" class="btn btn-dark">All guitars</a>
+        <a href="/guitars/electric" class="btn btn-dark">Electric guitars</a>
+        <a href="/guitars/acoustic" class="btn btn-dark">Acoustic guitars</a>
+    </div>
 
     {% for g in guitars %}
-        <div>{{ g }}</div>
+        <div>{{ g.style }}</div>
     {% endfor %}
 
 
