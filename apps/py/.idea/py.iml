@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ch05_pypi" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch06_memory" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch07_web" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch09_testing" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (py) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
