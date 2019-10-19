@@ -10,6 +10,7 @@
       <w>httpx</w>
       <w>jijna</w>
       <w>navbar</w>
+      <w>pytest</w>
       <w>refcnt</w>
       <w>refcounting</w>
       <w>sqlalchemy</w>

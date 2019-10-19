@@ -12,9 +12,6 @@ class Guitar:
 
 
 def all_guitars(style: Optional[str]) -> List[Guitar]:
-    if not style or not style.strip():
-        raise ValueError("'style' cannot be empty.")
-
     style = style.lower()
 
     log(f"Guitars for {style}")
