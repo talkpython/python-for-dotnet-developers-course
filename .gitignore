@@ -125,3 +125,4 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 file.json
+dataSources.local.xml
