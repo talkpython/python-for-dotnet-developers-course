@@ -2,22 +2,19 @@ from colorama import Fore
 import httpx
 import bs4
 import datetime
-import asyncio
-
-loop = asyncio.get_event_loop()
+from unsync import unsync
 
 
 def main():
     print("Python async web scraper")
 
     t0 = datetime.datetime.now()
-    loop.run_until_complete(get_titles())
+    get_titles().result()
     dt = datetime.datetime.now() - t0
     print(f"Finished in {dt.total_seconds():,.2f} seconds.")
 
-    loop.close()
 
-
+@unsync
 async def get_html(n: int) -> str:
     print(Fore.YELLOW + f"Getting HTML for episode {n}...", flush=True)
     url = f'https://talkpython.fm/{n}'
@@ -47,11 +44,11 @@ def get_title_from_html(n: int, html: str) -> str:
 #         title = get_title_from_html(n, html)
 #         print(Fore.GREEN + title)
 
-
+@unsync
 async def get_titles():
     tasks = []
     for n in range(220, 231):
-        task = loop.create_task(get_html(n))
+        task = get_html(n)
         episode = n
 
         tasks.append((episode, task))
