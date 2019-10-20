@@ -27,6 +27,8 @@ async def get_html(n: int) -> str:
     return resp.text
 
 
+# @unsync                # <-- will run get_title_from_html() on a background thread.
+# @unsync(cpu_bound=True)  # <-- will run get_title_from_html() on a subprocess.
 def get_title_from_html(n: int, html: str) -> str:
     print(Fore.CYAN + f"Getting TITLE for episode {n}...", flush=True)
 
