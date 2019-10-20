@@ -1,12 +1,16 @@
 from colorama import Fore
 import httpx
 import bs4
+import datetime
 
 
 def main():
-    print("Using Python packages")
+    print("Python async web scraper")
 
+    t0 = datetime.datetime.now()
     get_titles()
+    dt = datetime.datetime.now() - t0
+    print(f"Finished in {dt.total_seconds():,.2f} seconds.")
 
 
 def get_html(n: int) -> str:
@@ -31,7 +35,7 @@ def get_title_from_html(n: int, html: str) -> str:
 
 
 def get_titles():
-    for n in range(220, 230):
+    for n in range(220, 231):
         html = get_html(n)
         title = get_title_from_html(n, html)
         print(Fore.GREEN + title)
