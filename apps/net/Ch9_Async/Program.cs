@@ -13,7 +13,7 @@ namespace Ch9_Async
         public static void Main()
         {
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Concurrent Web Scraper.");
+            Console.WriteLine("C# Concurrent Web Scraper.");
             var sw = Stopwatch.StartNew();
 
             GetTitleRange().Wait();

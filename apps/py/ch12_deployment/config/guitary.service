@@ -1,0 +1,15 @@
+[Unit]
+Description=uWSGI Guitary server instance
+After=syslog.target
+
+[Service]
+ExecStart=/apps/venv/bin/uwsgi -H /apps/venv --master --processes 4 --threads 2 --http :5000 --manage-script-name --python-path /apps/app_repo/apps/py/ch07_web --mount /=wsgi:app --logto /apps/logs/guitary/uwsgi.log
+RuntimeDirectory=/apps/app_repo/apps/py/ch07_web
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

@@ -34,7 +34,7 @@ namespace Ch5_nuget
             Console.ForegroundColor = ConsoleColor.White;
         }
 
-        public  static string GetEpisodeHtml(int episodeNumber, string url = null)
+        public static string GetEpisodeHtml(int episodeNumber, string url = null)
         {
             if (string.IsNullOrEmpty(url))
             {

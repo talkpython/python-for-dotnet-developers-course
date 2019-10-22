@@ -8,3 +8,4 @@ requests
 pytest
 pytest-mock
 pytest-clarity
+unsync
