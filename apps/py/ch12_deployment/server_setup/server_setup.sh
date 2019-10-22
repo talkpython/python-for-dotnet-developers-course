@@ -57,7 +57,7 @@ cd /apps/app_repo/apps/py/ch07_web/
 pip install -r requirements.txt
 
 # Copy and enable the daemon
-cp /apps/app_repo/apps/py/Ch10_deploy/config/guitary.service /etc/systemd/system/guitary.service
+cp /apps/app_repo/apps/py/ch12_deployment/config/guitary.service /etc/systemd/system/guitary.service
 
 
 systemctl start guitary
