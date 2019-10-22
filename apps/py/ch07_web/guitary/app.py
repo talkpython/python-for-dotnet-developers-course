@@ -1,3 +1,9 @@
+import os
+import sys
+
+folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, folder)
+
 import flask
 from guitary.services import catalog_service
 

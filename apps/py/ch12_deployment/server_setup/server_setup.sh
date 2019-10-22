@@ -50,7 +50,7 @@ pip install --upgrade uwsgi
 
 # clone the repo:
 cd /apps
-git clone https://github.com/mikeckennedy/python-for-dotnet-developers-materials app_repo
+git clone https://github.com/talkpython/python-for-dotnet-developers-course app_repo
 
 # Setup the web app:
 cd /apps/app_repo/apps/py/ch07_web/
