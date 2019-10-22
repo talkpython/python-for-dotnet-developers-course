@@ -1,5 +1,5 @@
 [Unit]
-Description=uWSGI PyPI server instance
+Description=uWSGI Guitary server instance
 After=syslog.target
 
 [Service]
