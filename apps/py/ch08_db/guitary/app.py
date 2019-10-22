@@ -24,13 +24,18 @@ def guitars(style: str = None):
     return flask.render_template('guitars.html', guitars=guitar_list)
 
 
-def main():
+def configure():
     session_factory.global_init('guitary.sqlite')
     session_factory.create_tables()
     data_loader.load_guitars_if_empty()
 
+
+def main():
+    configure()
     app.run(debug=True)
 
 
 if __name__ == '__main__':
     main()
+else:
+    configure()
