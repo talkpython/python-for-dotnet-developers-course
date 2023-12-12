@@ -3,6 +3,9 @@ colorama
 bs4
 httpx
 flask
+matplotlib
+numpy
+scipy
 sqlalchemy
 requests
 pytest
