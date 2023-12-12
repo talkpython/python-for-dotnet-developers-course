@@ -21,7 +21,7 @@ async def get_html(n: int) -> str:
 
     # The "async with" syntax ensures that all active connections are closed on exit.
     async with httpx.AsyncClient() as client:
-        resp = await client.get(url)
+        resp = await client.get(url, follow_redirects=True)
         resp.raise_for_status()
 
     return resp.text
