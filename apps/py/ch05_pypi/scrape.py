@@ -13,7 +13,7 @@ def get_html(n: int) -> str:
     print(Fore.YELLOW + f"Getting HTML for episode {n}...", flush=True)
     url = f'https://talkpython.fm/{n}'
 
-    resp = httpx.get(url)
+    resp = httpx.get(url, follow_redirects=True)
     resp.raise_for_status()
 
     return resp.text
