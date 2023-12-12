@@ -8,3 +8,7 @@ def main():
         num = int(text)
         num_class = "small" if num < 100 else "huge!"
         print(f"The number is {num_class}")
+
+
+if __name__ == '__main__':
+    main()

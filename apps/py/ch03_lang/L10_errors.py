@@ -9,7 +9,7 @@ def main():
             print(Fore.YELLOW + f"Calling sketchy_method with {v}...", flush=True)
             sketchy_method(v)
         except BrokenPipeError:
-            print(Fore.LIGHTRED_EX + f" **** Network error, check our wifi.")
+            print(Fore.LIGHTRED_EX + " **** Network error, check our wifi.")
         except ArithmeticError:
             print(Fore.LIGHTRED_EX + f" **** Cannot compute with {v}!")
         except Exception as e:
