@@ -126,3 +126,5 @@ x86/
 bld/
 file.json
 dataSources.local.xml
+
+.idea/
