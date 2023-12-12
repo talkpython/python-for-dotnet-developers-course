@@ -18,7 +18,7 @@ def main():
         if evaluate_guess(guess, the_number):
             break
 
-    print(f"You got the number in {count} attempts. Thanks for playing, bye!")
+    print(f'You got the number in {count} attempts. Thanks for playing, bye!')
 
 
 def evaluate_guess(guess, number):
@@ -35,14 +35,14 @@ def evaluate_guess(guess, number):
 def get_guess():
     val = None
     try:
-        text = input("What number am I thinking of? ")
+        text = input('What number am I thinking of? ')
         val = int(text)
         if val < 1 or 100 < val:
-            print(f"{val} is not between 1 and 100.")
+            print(f'{val} is not between 1 and 100.')
             return None
         return val
     except:
-        print(f"{val} is not an integer!")
+        print(f'{val} is not an integer!')
         return None
 
 
@@ -54,7 +54,7 @@ def show_header():
     print('-------------------------------------------')
     print()
     print("I'm thinking of a number between 1 & 100. ")
-    print("How many steps can you guess it in?")
+    print('How many steps can you guess it in?')
     print()
 
     # implicit

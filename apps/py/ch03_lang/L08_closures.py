@@ -11,14 +11,14 @@ def main():
 
 
 def create_counter(start_val, counter_id):
-    print(f"Creating a counter with start value {start_val}...")
+    print(f'Creating a counter with start value {start_val}...')
 
     inc = start_val
 
     def counter():
         nonlocal inc
         inc += 1
-        print(f"#{counter_id}: Counting {start_val}\t -->\t{inc}.")
+        print(f'#{counter_id}: Counting {start_val}\t -->\t{inc}.')
 
     return counter
 

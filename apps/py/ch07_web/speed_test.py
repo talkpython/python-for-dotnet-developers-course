@@ -9,9 +9,9 @@ from urllib3.exceptions import InsecureRequestWarning
 
 def main():
     url = input("What's the URL? ").strip()
-    times = int(input("How many rounds <num>? "))
+    times = int(input('How many rounds <num>? '))
 
-    print(f"Running timing against {url}, {times} times.")
+    print(f'Running timing against {url}, {times} times.')
     total_time = 0.0
     with no_ssl_verification():
         with requests.Session() as session:

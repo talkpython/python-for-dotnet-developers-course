@@ -4,10 +4,11 @@ from typing import Callable, Any
 
 class switch:
     """
-        python-switch is a module-level implementation of the switch statement for Python.
-        See https://github.com/mikeckennedy/python-switch for full details.
-        Copyright Michael Kennedy (https://twitter.com/mkennedy)
+    python-switch is a module-level implementation of the switch statement for Python.
+    See https://github.com/mikeckennedy/python-switch for full details.
+    Copyright Michael Kennedy (https://twitter.com/mkennedy)
     """
+
     __no_result = uuid.uuid4()
     __default = uuid.uuid4()
 
@@ -58,7 +59,7 @@ class switch:
 
         if isinstance(key, list):
             if not key:
-                raise ValueError("You cannot pass an empty collection as the case. It will never match.")
+                raise ValueError('You cannot pass an empty collection as the case. It will never match.')
 
             found = False
             for i in key:
@@ -70,11 +71,11 @@ class switch:
             return found
 
         if key in self.cases:
-            raise ValueError(f"Duplicate case: {key}")
+            raise ValueError(f'Duplicate case: {key}')
         if not func:
-            raise ValueError("Action for case cannot be None.")
+            raise ValueError('Action for case cannot be None.')
         if not callable(func):
-            raise ValueError("Func must be callable.")
+            raise ValueError('Func must be callable.')
 
         self.cases.add(key)
         if key == self.value or not self._found and key == self.__default:
@@ -92,8 +93,9 @@ class switch:
             raise exc_val
 
         if not self._func_stack:
-            raise Exception("Value does not match any case and there "
-                            "is no default case: value {}".format(self.value))
+            raise Exception(
+                'Value does not match any case and there ' 'is no default case: value {}'.format(self.value)
+            )
 
         for func in self._func_stack:
             # noinspection PyCallingNonCallable
@@ -102,14 +104,13 @@ class switch:
     @property
     def result(self):
         if self.__result == switch.__no_result:
-            raise Exception("No result has been computed (did you access "
-                            "switch.result inside the with block?)")
+            raise Exception('No result has been computed (did you access ' 'switch.result inside the with block?)')
 
         return self.__result
 
 
 def closed_range(start: int, stop: int, step=1) -> range:
     if start >= stop:
-        raise ValueError("Start must be less than stop.")
+        raise ValueError('Start must be less than stop.')
 
     return range(start, stop + step, step)

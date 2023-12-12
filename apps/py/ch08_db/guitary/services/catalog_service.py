@@ -12,8 +12,6 @@ def all_guitars(style: Optional[str]) -> List[Guitar]:
             return list(guitars)
 
         # noinspection PyUnresolvedReferences
-        filtered_guitars = list(ctx.session.query(Guitar)
-                                .filter(Guitar.style == style)
-                                .order_by(Guitar.price.desc()))
+        filtered_guitars = list(ctx.session.query(Guitar).filter(Guitar.style == style).order_by(Guitar.price.desc()))
 
     return filtered_guitars

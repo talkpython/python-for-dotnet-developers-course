@@ -4,13 +4,13 @@ import bs4
 
 
 def main():
-    print("Using Python packages")
+    print('Using Python packages')
 
     get_titles()
 
 
 def get_html(n: int) -> str:
-    print(Fore.YELLOW + f"Getting HTML for episode {n}...", flush=True)
+    print(Fore.YELLOW + f'Getting HTML for episode {n}...', flush=True)
     url = f'https://talkpython.fm/{n}'
 
     resp = httpx.get(url, follow_redirects=True)
@@ -20,12 +20,12 @@ def get_html(n: int) -> str:
 
 
 def get_title_from_html(n: int, html: str) -> str:
-    print(Fore.CYAN + f"Getting TITLE for episode {n}...", flush=True)
+    print(Fore.CYAN + f'Getting TITLE for episode {n}...', flush=True)
 
     soup = bs4.BeautifulSoup(html, 'html.parser')
     header = soup.select_one('h1')
     if not header:
-        return "MISSING"
+        return 'MISSING'
 
     return header.text.strip()
 

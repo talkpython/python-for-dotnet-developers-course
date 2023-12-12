@@ -24,7 +24,7 @@ def global_init(db_name: str):
 
 def create_tables():
     if not __engine:
-        raise Exception("You must call global_init() first.")
+        raise Exception('You must call global_init() first.')
 
     # noinspection PyUnresolvedReferences
     from guitary.data.guitar import Guitar
@@ -35,7 +35,7 @@ def create_tables():
 
 def create_session() -> ContextSession:
     if not __factory:
-        raise Exception("You must call global_init() first.")
+        raise Exception('You must call global_init() first.')
 
     session = __factory()
     session.expire_on_commit = False

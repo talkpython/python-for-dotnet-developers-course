@@ -22,12 +22,12 @@ def park_cars(cars: List[Car]):
 
     for spot, car in lot:
         if car:
-            print(f"Spot: {spot} has car {car}.")
+            print(f'Spot: {spot} has car {car}.')
 
 
 def use_cars(cars):
     for car in cars:
-        print(f"{car.model_name} is electric? {car.is_electric}")
+        print(f'{car.model_name} is electric? {car.is_electric}')
         car.drive()
         car.refuel()
         print()

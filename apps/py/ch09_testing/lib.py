@@ -3,8 +3,7 @@ from colorama import Fore
 
 
 class Guitar:
-    def __init__(self, name: str = None, price: float = 0.0,
-                 img: str = None, style: str = None):
+    def __init__(self, name: str = None, price: float = 0.0, img: str = None, style: str = None):
         self.style = style
         self.img = img
         self.price = price
@@ -17,27 +16,23 @@ def all_guitars(style: Optional[str]) -> List[Guitar]:
 
     style = style.lower()
 
-    log(f"Guitars for {style}")
+    log(f'Guitars for {style}')
     guitars = get_guitars_from_db()
     if style == 'all':
         return guitars
 
-    return [
-        g
-        for g in guitars
-        if g.style == style
-    ]
+    return [g for g in guitars if g.style == style]
 
 
 def log(msg: str):
     # raise Exception("NO LOG!")
-    print(Fore.YELLOW + "LOGGING THIS TO A FILE, SHOULD NOT SEE IN TEST: " + Fore.WHITE + f"{msg}.")
+    print(Fore.YELLOW + 'LOGGING THIS TO A FILE, SHOULD NOT SEE IN TEST: ' + Fore.WHITE + f'{msg}.')
 
 
 # noinspection DuplicatedCode
 def get_guitars_from_db():
     # raise Exception("NO DB!")
-    print(Fore.YELLOW + "GETTING GUITARS FROM DB! Should not see in test." + Fore.WHITE)
+    print(Fore.YELLOW + 'GETTING GUITARS FROM DB! Should not see in test.' + Fore.WHITE)
     # This guitar data simulates what we would actually get back from the database.
     guitars = [
         Guitar('AX Black', 499, '/static/img/guitars/ax-black.jpg', style='electric'),

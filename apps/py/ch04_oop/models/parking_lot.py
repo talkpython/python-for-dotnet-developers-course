@@ -4,19 +4,15 @@ from models.car import Car
 
 
 class ParkingLot:
-
     def __init__(self, spot_names: List[str]):
         # self.spots = dict()
         # for n in spot_names:
         #     self.spots[n] = None
 
-        self.spots: Dict[str, Optional[Car]] = {
-            n: None
-            for n in spot_names
-        }
+        self.spots: Dict[str, Optional[Car]] = {n: None for n in spot_names}
 
     @staticmethod
-    def create(spots_per_level: int, levels: int) -> "ParkingLot":
+    def create(spots_per_level: int, levels: int) -> 'ParkingLot':
         names = []
         level_names = ['A', 'B', 'C', 'D', 'E', 'G']
         for ln in level_names[:levels]:

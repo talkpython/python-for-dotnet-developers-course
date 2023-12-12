@@ -20,10 +20,6 @@ def all_guitars(style: Optional[str]) -> List[Guitar]:
     if style is None or style == 'all':
         return guitars
 
-    filtered_guitars = [
-        g
-        for g in guitars
-        if g.style == style
-    ]
+    filtered_guitars = [g for g in guitars if g.style == style]
 
     return filtered_guitars

@@ -1,22 +1,22 @@
 def main():
-    print("say_hello()")
+    print('say_hello()')
     say_hello()
     print()
 
-    print("say_hello(name)")
-    say_hello("Zoe")
+    print('say_hello(name)')
+    say_hello('Zoe')
     print()
 
-    print("say_hello(name, times)")
-    say_hello("Zoe", 5)
+    print('say_hello(name, times)')
+    say_hello('Zoe', 5)
     print()
 
-    print("say_hello(name, times, 1, 2, 3, 4)")
-    say_hello("Zoe", 5, 1, 2, 3, 4)
+    print('say_hello(name, times, 1, 2, 3, 4)')
+    say_hello('Zoe', 5, 1, 2, 3, 4)
     print()
 
-    print("say_hello(name, times, 1, 2, 3, 4, val=7, mode=prod)")
-    say_hello("Zoe", 5, 1, 2, 3, 4, val=7, mode="prod")
+    print('say_hello(name, times, 1, 2, 3, 4, val=7, mode=prod)')
+    say_hello('Zoe', 5, 1, 2, 3, 4, val=7, mode='prod')
     print()
 
     # THis isn't really an option
@@ -30,7 +30,7 @@ def main():
 
 
 def say_hello(name='friend', times=1, *args, **kwargs):
-    print(f"Hello {name} with times={times}, args={args}, kwargs={kwargs}!")
+    print(f'Hello {name} with times={times}, args={args}, kwargs={kwargs}!')
 
 
 if __name__ == '__main__':
