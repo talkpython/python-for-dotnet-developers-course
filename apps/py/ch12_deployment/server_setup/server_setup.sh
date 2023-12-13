@@ -15,8 +15,9 @@ sudo apt-get install -y -q nginx
 # for gzip support in uwsgi
 sudo apt-get install --no-install-recommends -y -q libpcre3-dev libz-dev
 
-# Stop the hackers
-sudo apt install fail2ban -y
+# Fail2ban no longer supported
+# Skip this for now.
+# sudo apt install fail2ban -y
 
 ufw allow 22
 ufw allow 80
@@ -78,9 +79,27 @@ update-rc.d nginx enable
 service nginx restart
 
 
-# Optionally add SSL support via Let's Encrypt:
-# https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04
+# Optionally add SSL support via Let's Encrypt
+# NOTE: These steps have changed since the recording.
 
-add-apt-repository ppa:certbot/certbot
-apt install python-certbot-nginx
+####### NEW STEPS ###############################################
+# See https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal&tab=standard
+
+# Because always a good idea :)
+apt update
+apt upgrade
+
+# Not need even though it's in the instructions, is installed on Ubuntu
+# Skip -> install snapd https://snapcraft.io/docs/installing-snapd
+
+snap install --classic certbot
+ln -s /snap/bin/certbot /usr/bin/certbot
 certbot --nginx -d guitary.talkpython.com
+
+####### THESE ARE THE OLD STEPS #################################
+#
+## https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04
+#
+#add-apt-repository ppa:certbot/certbot
+#apt install python-certbot-nginx
+#certbot --nginx -d guitary.talkpython.com
