@@ -1,8 +1,10 @@
 # comments
 colorama
 bs4
-httpx
 flask
+httpx
+ipykernel
+ipywidgets
 matplotlib
 numpy
 scipy
