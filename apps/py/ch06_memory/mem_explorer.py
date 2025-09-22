@@ -23,7 +23,7 @@ def ref_counting():
     v2 = v1
     print(f'Step 2: Ref count is {memutil.refs(v1_id)}')
 
-    v2 = None
+    v2 = None  # noqa: F841
     print(f'Step 3: Ref count is {memutil.refs(v1_id)}')
 
     v1 = None

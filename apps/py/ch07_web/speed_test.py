@@ -58,7 +58,7 @@ def no_ssl_verification():
         for adapter in opened_adapters:
             try:
                 adapter.close()
-            except:
+            except:  # noqa: E722
                 pass
 
 

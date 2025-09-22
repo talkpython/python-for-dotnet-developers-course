@@ -41,7 +41,7 @@ def get_guess():
             print(f'{val} is not between 1 and 100.')
             return None
         return val
-    except:
+    except:  # noqa: E722
         print(f'{val} is not an integer!')
         return None
 

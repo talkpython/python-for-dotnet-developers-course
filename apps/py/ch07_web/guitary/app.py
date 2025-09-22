@@ -4,8 +4,8 @@ import sys
 folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, folder)
 
-import flask
-from guitary.services import catalog_service
+import flask  # noqa: E402
+from guitary.services import catalog_service  # noqa: E402
 
 app = flask.Flask(__name__)
 

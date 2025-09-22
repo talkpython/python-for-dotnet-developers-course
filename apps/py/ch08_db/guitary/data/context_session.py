@@ -12,7 +12,7 @@ class ContextSession:
         if exc_val:
             try:
                 self.session.rollback()
-            except:
+            except:  # noqa: E722
                 pass
 
         self.session.close()
