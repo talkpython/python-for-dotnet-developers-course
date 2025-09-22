@@ -93,9 +93,7 @@ class switch:
             raise exc_val
 
         if not self._func_stack:
-            raise Exception(
-                'Value does not match any case and there ' 'is no default case: value {}'.format(self.value)
-            )
+            raise Exception('Value does not match any case and there is no default case: value {}'.format(self.value))
 
         for func in self._func_stack:
             # noinspection PyCallingNonCallable
@@ -104,7 +102,7 @@ class switch:
     @property
     def result(self):
         if self.__result == switch.__no_result:
-            raise Exception('No result has been computed (did you access ' 'switch.result inside the with block?)')
+            raise Exception('No result has been computed (did you access switch.result inside the with block?)')
 
         return self.__result
 

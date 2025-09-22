@@ -27,7 +27,6 @@ def create_tables():
         raise Exception('You must call global_init() first.')
 
     # noinspection PyUnresolvedReferences
-    from guitary.data.guitar import Guitar
     from guitary.data.sqlalchemybase import SqlAlchemyBase
 
     SqlAlchemyBase.metadata.create_all(__engine)

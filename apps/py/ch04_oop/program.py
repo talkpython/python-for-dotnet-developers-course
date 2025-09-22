@@ -1,4 +1,3 @@
-from pprint import pprint
 from typing import List
 
 from models.basic_car import BasicCar

@@ -6,7 +6,6 @@ import lib
 import pytest_mock
 
 # noinspection PyUnresolvedReferences
-from test_fixtures import guitar_data
 
 
 def test_something():
